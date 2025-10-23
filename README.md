@@ -3,7 +3,7 @@ A program that scans a folder selected by the user for .txt and .log files. It f
 
 ## Features
 - Scanning .txt and .log files for dates, emails, warning and error messages in a folder selected by the user.
-- Creating a summary file wiht information about what it found for each scanned file.
+- Creating a summary file with information about what it found for each scanned file.
 - Creating a processed files .zip to place all summary files
 - Allowing the user to choose to copy or move the processed files .zip to an archived files .zip
 - Printing a final summary of finds across all files in the console
