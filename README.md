@@ -14,13 +14,21 @@ A program that scans a folder selected by the user for .txt and .log files. It f
 2. Run in terminal.
 
 ## Example Usage
+### Folder structure pre run example
 ![logFileAnalyzer folder structure pre run example](https://github.com/user-attachments/assets/464817ed-cd66-4e7d-ab1c-c8b16543259b)
+### Example logs folder content example
 ![logFileAnalyzer example logs folder content example](https://github.com/user-attachments/assets/74386de1-7b99-4dee-9ea5-d0f0ecb9837c)
+### app_log_01 content example
 ![logFileAnalyzer app_log_01 content example](https://github.com/user-attachments/assets/807cf868-9f8f-41c6-a7a1-c7c9610c53fd)
+### Console example
 ![logFileAnalyzer console example](https://github.com/user-attachments/assets/2dd68501-bc58-4cda-ba17-2af3766b243c)
+### Folder structure post run example
 ![logFileAnalyzer folder structure post run example](https://github.com/user-attachments/assets/b62e99d7-feba-4d5f-98d4-66c23201a9c0)
+### Master summary content example
 ![logFileAnalyzer master summary content example](https://github.com/user-attachments/assets/694c236b-0de0-4067-823c-648e6cac207d)
+### Processed logs folder content example
 ![logFileAnalyzer processed logs folder content example](https://github.com/user-attachments/assets/fd541cf9-d7b1-4970-8ff6-244d1d8e2539)
+### Summary_app_log_01 content example
 ![logFileAnalyzer summary_app_log_01 content example](https://github.com/user-attachments/assets/c64eda1a-03c7-4105-9607-f0454bd12073)
 
 ## Tech Stack
