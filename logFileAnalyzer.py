@@ -35,7 +35,7 @@ emailRegex = re.compile(r"""
 # Date regex
 while True:
     print('Insert date format (yyyy-mm-dd/dd-mm-yyyy):')
-    dateInput = input()
+    dateInput = input().strip()
     if dateInput == 'yyyy-mm-dd':
         date = r'\d{4}-\d{2}-\d{2}'
         break
@@ -68,9 +68,9 @@ for foldername, subfolders, filenames in os.walk(folderPath):
     for file in filenames:       
 
         # Opening .txt and .log files
-        if file[-4:] == '.txt' or file[-4:] == '.log':
+        if file[-4:].lower() == '.txt' or file[-4:].lower() == '.log':
             fileCounter += 1
-            fileObj = open(foldername + '\\' + file)
+            fileObj = open(os.path.join(foldername, file))
             content = fileObj.readlines()
             fileObj.close()
 
@@ -109,9 +109,9 @@ for foldername, subfolders, filenames in os.walk(folderPath):
             else:
                 file2 = file[:-4] + '(' + str(fileCounter2)  + ')' + file[-4:]
                 fileObj = open('summary_' + file2, 'w')
-                fileObj.write('SUMMARY REPORT FOR: ' + file2 + '\n\n')
+                fileObj.write('SUMMARY REPORT FOR: ' + file + '\n\n')
                 fileObj.write('\nFILE PATH\n\n')
-                fileObj.write(os.path.join(foldername, file2) + '\n\n')
+                fileObj.write(os.path.join(foldername, file) + '\n\n')
             fileObj.write('\nTOTAL LINES SCANNED\n\n')
             fileObj.write(str(len(content)) + '\n')
             if dateList != []:
@@ -159,8 +159,8 @@ while True:
                                      str(shelfFile['runCounter']) + '.zip'), 'a')
         for i in os.listdir(os.path.join(folderPath2, 'archived_logs_' +
                                          str(shelfFile['runCounter']))):
-            zipFileObj.write('archived_logs_' +
-                             str(shelfFile['runCounter']) + '\\' + i,
+            zipFileObj.write(os.path.join('archived_logs_' +
+                             str(shelfFile['runCounter']), i),
                              compress_type=zipfile.ZIP_DEFLATED)
         zipFileObj.close()
         
