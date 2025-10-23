@@ -1,0 +1,8 @@
+Starting application...
+User login: alice@example.com
+User login: bob.smith@workmail.org
+2025-10-17 09:15:44 - INFO - Connected to database
+2025-10-17 09:16:12 - WARNING - Slow query detected
+2025-10-17 09:18:01 - ERROR - Database connection lost
+Reconnecting...
+2025-10-17 09:18:32 - INFO - Reconnected successfully

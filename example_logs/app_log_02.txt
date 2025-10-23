@@ -1,0 +1,5 @@
+2025-10-18 14:05:01 - INFO - User login: clara@gmail.com
+2025-10-18 14:06:13 - WARNING - Memory usage high
+2025-10-18 14:07:25 - INFO - Backup started
+2025-10-18 14:09:33 - ERROR - Backup failed due to permission denied
+Contact admin at admin@company.com
