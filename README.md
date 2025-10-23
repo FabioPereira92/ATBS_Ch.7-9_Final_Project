@@ -1,4 +1,4 @@
-# logFileAnalyzer
+# Log File Analyzer
 A program that scans a folder selected by the user for .txt and .log files. It finds dates, emails, warning and error messages, creates a summary file for each scanned file and places all summary files in a processed files .zip. It also allows the user to copy or move the processed .zip files to an archived files .zip and prints a final summary of finds across all files in the console. It also creates a .txt file with a final summary added each time the program is run
 
 ## Features
